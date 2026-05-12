@@ -1,0 +1,37 @@
+:root{
+    --color-primary: #FDCD01;
+    --color-secondary: #00658B;
+    --color-tertiary: #FCEAC9;
+    --color-neutral: #2F2F2F;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 32px;
+}
+
+.logo-container > h1 {
+    color: ;
+}
+
+header > nav {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+.header-button {
+    background-color: var(--color-primary);
+    padding: 12px 24px;
+    border-radius: 30px;
+    border-bottom: 2px solid black; 
+    color: #6e5800;
+}

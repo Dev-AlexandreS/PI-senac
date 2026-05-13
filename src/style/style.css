@@ -9,11 +9,7 @@
 header {
     display: flex;
     justify-content: space-between;
-    padding: 26px 32px;
-}
-
-.logo-container > h1 {
-    color: ;
+    padding: 15px 32px;
 }
 
 header > nav {

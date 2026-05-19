@@ -2,6 +2,7 @@
     --color-primary: #FDCD01;
     --color-secondary: #00658B;
     --color-tertiary: #FCEAC9;
+    --color-button: #d6af00;
     --color-neutral: #2F2F2F;
     
 }
@@ -25,9 +26,15 @@ header > nav {
 }
 
 .header-button {
-    background-color: var(--color-primary);
+    background-color: var(--color-button);
     padding: 12px 24px;
     border-radius: 30px;
     border-bottom: 2px solid black; 
-    color: #6e5800;
+    color: var(--color-neutral);
+}
+
+.header-button:hover{
+    background-color: var(--color-primary);
+    color: black;
+    cursor: pointer;
 }

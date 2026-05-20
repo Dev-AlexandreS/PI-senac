@@ -4,6 +4,7 @@
     --color-tertiary: #FCEAC9;
     --color-button: #d6af00;
     --color-neutral: #2F2F2F;
+    --color-font: #4e4632;
     
 }
 
@@ -39,18 +40,58 @@ header > nav {
     cursor: pointer;
 }
 
-main {
-    ba
-}
-
 .hero-header {
+    height: 80vh;
+    background: black url("../assets/image/hero-header-background.png") center center / cover no-repeat;
     display: flex;
     padding: 130px 752px 150px 80px;
+}
+
+.hero-header-content > h1 {
+    font-size: 48px;
+    font-weight: extra-bold;
+    text-align: justify;
+}
+
+.hero-header-content > h1 > span{
+    font-size: 48px;
+    color: var(--color-secondary);
+}
+
+.hero-header-content > p {
+    font-size: 18px;
+    color: var(--color-font);
+    text-align: justify;
+}
+
+.hero-header-content > button {
+    display: flex;
+    background-color: var(--color-primary);
+    padding: 24px 64px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 1px 1px #6e580098;
+    gap: 8px;
+    color: #6e5800;
+}
+
+.hero-header-content > button:hover {
+    background-color: var(--color-button);
+    color: white;
+    cursor: pointer;
+}
+
+.hero-header-content > button:hover > .sac-button {
+    filter: brightness(0) invert(1);
 }
 
 .hero-header-content {
     display: flex;
     flex-direction: column;
+    align-items: start;
     padding: 40px;
     gap: 24px;
+    background-color: rgba(255, 255, 255, 0.726);
+    border-radius: 12px;
 }
+
+

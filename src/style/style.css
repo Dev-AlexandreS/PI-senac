@@ -38,3 +38,19 @@ header > nav {
     color: black;
     cursor: pointer;
 }
+
+main {
+    ba
+}
+
+.hero-header {
+    display: flex;
+    padding: 130px 752px 150px 80px;
+}
+
+.hero-header-content {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 24px;
+}

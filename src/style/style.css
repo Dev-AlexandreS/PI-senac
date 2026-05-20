@@ -27,7 +27,7 @@ header > nav {
 }
 
 .header-button {
-    background-color: var(--color-button);
+    background-color: var(--color-primary);
     padding: 12px 24px;
     border-radius: 30px;
     border-bottom: 2px solid black; 
@@ -35,8 +35,8 @@ header > nav {
 }
 
 .header-button:hover{
-    background-color: var(--color-primary);
-    color: black;
+    background-color: var(--color-button);
+    color: white;
     cursor: pointer;
 }
 

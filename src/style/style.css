@@ -7,6 +7,9 @@
     --color-font: #4e4632;
     
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #FBF9F8;
 }
@@ -65,7 +68,7 @@ header > nav > a:hover {
     background: black url("../assets/image/hero-header-background.png") center center / cover no-repeat;
     display: flex;
     align-items: center;
-    padding-left: 80px;
+    padding-left: 3rem;
 }
 
 .hero-header-content > h1 {
@@ -76,7 +79,7 @@ header > nav > a:hover {
 
 .hero-header-content > h1 > span{
     font-weight: bold;
-    font-size: 48px;
+    font-size: 3rem;
     color: var(--color-secondary);
 }
 
@@ -112,7 +115,6 @@ header > nav > a:hover {
     box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.1);
     transition: all 1s ease;
 }
-
 .hero-header-content {
     display: flex;
     flex-direction: column;
@@ -123,8 +125,7 @@ header > nav > a:hover {
     background-color: rgba(255, 255, 255, 0.726);
     border-radius: 12px;
 }
-
-.categories{
+.categories, .offers{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -170,11 +171,12 @@ header > nav > a:hover {
     transition: all 0.5s ease;
     border-radius: 12px;
 }
-.categorie-item:hover{
+.categorie-item:hover, .product:hover{
     z-index: 1;
     scale: 1.03;
     box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.1);
-    transition: all 1.2s ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
 }
 
 .categorie-image {
@@ -191,7 +193,7 @@ header > nav > a:hover {
     gap: 12px;
 }
 
-.categorie-title > span {
+.categorie-title > span, .buy-icon {
     display: flex;
     width: 40px;
     height: 40px;
@@ -210,7 +212,7 @@ header > nav > a:hover {
     background-color: #F2E1C0;
 }
 
-.categorie-title > h1{
+.categorie-title > h3{
     font-size: 26px;
     color: #1B1C1C;
 }
@@ -218,6 +220,50 @@ header > nav > a:hover {
 .categorie-item > p{
     width: 340px;
     color: var(--color-font);
+}
+
+.products-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    gap: 12px;
+}
+.product-image{
+    width: 260px;
+    height: 260px;
+    border-radius: 12px;
+}
+
+.product-informations{
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    gap: 16px;
+}
+.product-price-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.product-title{
+    font-size: 18px;
+    font-weight: 600;
+}
+.product-price{
+    font-size: 28px;
+    font-weight: bold;
+    color: #735C00;
 }
 
 

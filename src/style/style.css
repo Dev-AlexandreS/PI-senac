@@ -58,11 +58,12 @@ header > nav > a:hover {
     height: 85vh;
     background: black url("../assets/image/hero-header-background.png") center center / cover no-repeat;
     display: flex;
-    padding: 130px 752px 235px 80px;
+    align-items: center;
+    padding-left: 80px;
 }
 
 .hero-header-content > h1 {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 500;
     text-align: start;
 }
@@ -104,10 +105,63 @@ header > nav > a:hover {
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding: 40px;
+    padding: 48px;
     gap: 24px;
+    width: fit-content;
     background-color: rgba(255, 255, 255, 0.726);
     border-radius: 12px;
+}
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 112px;
+    gap: 64px;
+}
+.section-informations{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.section-tag{
+    background-color: #C5E7FF;
+    color: #001E2D;
+    font-weight: 500;
+    text-align: center;
+    width: fit-content;
+    padding: 4px 12px;
+    border-radius: 12px;
+}
+.section-informations > h1{
+    font-size: 32px;
+    font-weight: bold;
+    color: #1B1C1C;
+}
+.categorie-itens{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.categorie-item{
+
+}
+.categorie-image{
+
+}
+.categorie-title{
+
+}
+.categorie-icon{
+
+}
+.categorie-title > h1{
+
+}
+.categorie-item > p{
+    
 }
 
 

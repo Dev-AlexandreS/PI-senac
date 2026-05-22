@@ -146,20 +146,40 @@ header > nav > a:hover {
     justify-content: center;
 }
 .categorie-item{
-
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
-.categorie-image{
 
+.categorie-image {
+    width: 340px;
+    height: 190px;
+    object-fit: cover;     
+    object-position: center; 
 }
+
 .categorie-title{
-
+    display: flex;
+    align-items: center;
 }
-.categorie-icon{
 
+.categorie-title > span {
+    display: flex;
+    background-color: var(--color-primary);
+    width: 30px;
+    height: 30px;
+    border-radius: 50% ;
+    align-items: center;
+    justify-content: center;
+}
+
+.categorie-icon{
 }
 .categorie-title > h1{
-
+    font-size: 26px;
+    
 }
+
 .categorie-item > p{
     
 }

@@ -7,7 +7,9 @@
     --color-font: #4e4632;
     
 }
-
+body{
+    background-color: #FBF9F8;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -52,6 +54,10 @@ header > nav > a:hover {
     background-color: var(--color-button);
     color: white;
     cursor: pointer;
+    z-index: 1;
+    scale: 1.02;
+    box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.1);
+    transition: all 1s ease;
 }
 
 .hero-header {
@@ -95,10 +101,16 @@ header > nav > a:hover {
     background-color: var(--color-button);
     color: white;
     cursor: pointer;
+    z-index: 1;
+    scale: 1.02;
+    box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.1);
+    transition: all 1s ease;
 }
 
 .hero-header-content > button:hover > .sac-button {
     filter: brightness(0) invert(1);
+    box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.1);
+    transition: all 1s ease;
 }
 
 .hero-header-content {
@@ -141,47 +153,71 @@ header > nav > a:hover {
     color: #1B1C1C;
 }
 .categorie-itens{
-    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 24px;
 }
 .categorie-item{
     display: flex;
     flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background-color: #FFFFFF;
     gap: 24px;
+    padding: 24px;
+    transition: all 0.5s ease;
+    border-radius: 12px;
+}
+.categorie-item:hover{
+    z-index: 1;
+    scale: 1.03;
+    box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.1);
+    transition: all 1.2s ease;
 }
 
 .categorie-image {
     width: 340px;
     height: 190px;
     object-fit: cover;     
-    object-position: center; 
+    object-position: center;
+    border-radius: 8px; 
 }
 
 .categorie-title{
     display: flex;
     align-items: center;
+    gap: 12px;
 }
 
 .categorie-title > span {
     display: flex;
-    background-color: var(--color-primary);
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50% ;
     align-items: center;
     justify-content: center;
 }
 
-.categorie-icon{
+.icon-yellow{
+    background-color: var(--color-primary);
 }
+.icon-blue{
+    background-color: #01658B;
+}
+.icon-beige{
+    background-color: #F2E1C0;
+}
+
 .categorie-title > h1{
     font-size: 26px;
-    
+    color: #1B1C1C;
 }
 
 .categorie-item > p{
-    
+    width: 340px;
+    color: var(--color-font);
 }
 
 

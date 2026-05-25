@@ -266,4 +266,36 @@ header > nav > a:hover {
     color: #735C00;
 }
 
+.ourMission {
+    background-color: #f3e5c8;
+    padding: 64px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.card-ourMission {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 900px;
+    padding: 64px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ourMission-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: justify;
+}
+
+.ourMission-text > h1 {
+    font-size: 40px;
+}

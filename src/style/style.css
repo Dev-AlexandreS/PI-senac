@@ -148,6 +148,15 @@ header > nav > a:hover {
     padding: 4px 12px;
     border-radius: 12px;
 }
+.tag{
+    background-color: #735C00;
+    color: #FFFFFF;
+    font-weight: 400;
+    text-align: center;
+    width: fit-content;
+    padding: 4px 12px;
+    border-radius: 19px;
+}
 .section-informations > h1{
     font-size: 32px;
     font-weight: bold;
@@ -300,7 +309,7 @@ header > nav > a:hover {
     font-size: 40px;
 }
 
-.footer {
+footer {
     background-color: #FFFFFF;
     padding: 48px 112px 24px;
 }
@@ -371,7 +380,7 @@ header > nav > a:hover {
 
 .footer-section-title {
     font-weight: 600;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .footer-email {

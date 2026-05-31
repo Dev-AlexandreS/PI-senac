@@ -1,149 +1,242 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Real Melo</title>
-    <link rel="shortcut icon" href="src/assets/image/logo.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="src/assets/image/logo.ico"
+      type="image/x-icon"
+    />
     <script src="src/js/script.js" defer></script>
-    <link rel="stylesheet" href="src/style/reset.css">
-    <link rel="stylesheet" href="src/style/style.css">
-</head>
+    <link rel="stylesheet" href="src/style/reset.css" />
+    <link rel="stylesheet" href="src/style/style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="logo-container">
-            <img src="src/assets/image/logo.svg" alt="logo-img">
-            <h1>Real Melo</h1>
-        </div>
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#departments">Departamentos</a>
-            <a href="#offers">Ofertas</a>
-            <a href="#">Contato</a>
-        </nav>
-        <button class="header-button">Contato</button>
+      <div class="logo-container">
+        <img src="src/assets/image/logo.svg" alt="logo-img" />
+        <h1>Real Melo</h1>
+      </div>
+      <nav>
+        <a href="#">Inicio</a>
+        <a href="#departments">Departamentos</a>
+        <a href="#offers">Ofertas</a>
+        <a href="#">Contato</a>
+      </nav>
+      <button class="header-button">Contato</button>
     </header>
     <main>
-        <section class="hero-header">
-            <div class="hero-header-content">
-                <h1>Tudo o que você <br> precisa para sua<br>casa em <span>um só lugar</span></h1>
-                <p>Encontre a maior variedade de produtos com qualidade e <br> preços imperdíveis para o dia a dia do
-                    seu lar.</p>
-                <button id="cta"><img class="sac-button" src="src/assets/image/sacola-button.svg"
-                        alt="sacola-button">Ver Ofertas</button>
+      <section class="hero-header">
+        <div class="hero-header-content">
+          <h1>
+            Tudo o que você <br />
+            precisa para sua<br />casa em <span>um só lugar</span>
+          </h1>
+          <p>
+            Encontre a maior variedade de produtos com qualidade e <br />
+            preços imperdíveis para o dia a dia do seu lar.
+          </p>
+          <button id="cta">
+            <img
+              class="sac-button"
+              src="src/assets/image/sacola-button.svg"
+              alt="sacola-button"
+            />Ver Ofertas
+          </button>
+        </div>
+      </section>
+      <section id="departments" class="categories">
+        <div class="section-informations">
+          <span class="section-tag">Departamentos</span>
+          <h1>Compre por Categoria</h1>
+        </div>
+        <div class="categorie-itens">
+          <div class="categorie-item">
+            <img
+              class="categorie-image"
+              src="./src/assets/image/utilidades-domesticas.jpg"
+              alt="categorie-image"
+            />
+            <div class="categorie-title">
+              <span class="icon-yellow"
+                ><img
+                  class="categorie-icon"
+                  src="/src/assets/image/geladeira.svg"
+                  alt="categorie-icon"
+              /></span>
+              <h3>Utilidades Domésticas</h3>
             </div>
-        </section>
-        <section id="departments" class="categories">
-            <div class="section-informations">
-                <span class="section-tag">Departamentos</span>
-                <h1>Compre por Categoria</h1>
+            <p>
+              Facilite seu dia a dia com itens práticos e essenciais para a sua
+              casa.
+            </p>
+          </div>
+          <div class="categorie-item">
+            <img
+              class="categorie-image"
+              src="./src/assets/image/brinquedos.jpg"
+              alt="categorie-image"
+            />
+            <div class="categorie-title">
+              <span class="icon-blue"
+                ><img
+                  class="categorie-icon"
+                  src="/src/assets/image/carro.svg"
+                  alt="categorie-icon"
+              /></span>
+              <h3>Brinquedos</h3>
             </div>
-            <div class="categorie-itens">
-                <div class="categorie-item">
-                    <img class="categorie-image" src="./src/assets/image/utilidades-domesticas.jpg"
-                        alt="categorie-image">
-                    <div class="categorie-title">
-                        <span class="icon-yellow"><img class="categorie-icon" src="/src/assets/image/geladeira.svg"
-                                alt="categorie-icon"></span>
-                        <h3>Utilidades Domésticas</h3>
-                    </div>
-                    <p>Facilite seu dia a dia com itens práticos e essenciais para a sua casa.</p>
-                </div>
-                <div class="categorie-item">
-                    <img class="categorie-image" src="./src/assets/image/brinquedos.jpg" alt="categorie-image">
-                    <div class="categorie-title">
-                        <span class="icon-blue"><img class="categorie-icon" src="/src/assets/image/carro.svg"
-                                alt="categorie-icon"></span>
-                        <h3>Brinquedos</h3>
-                    </div>
-                    <p>Diversão garantida para todas as idades com nossos jogos e brinquedos.</p>
-                </div>
-                <div class="categorie-item">
-                    <img class="categorie-image" src="./src/assets/image/produtos-de-limpeza.jpg" alt="categorie-image">
-                    <div class="categorie-title">
-                        <span class="icon-beige"><img class="categorie-icon" src="/src/assets/image/sofa.svg"
-                                alt="categorie-icon"></span>
-                        <h3>Produtos de Limpeza</h3>
-                    </div>
-                    <p>Deixe seu ambiente mais aconchegante, limpo e cheiroso.</p>
-                </div>
+            <p>
+              Diversão garantida para todas as idades com nossos jogos e
+              brinquedos.
+            </p>
+          </div>
+          <div class="categorie-item">
+            <img
+              class="categorie-image"
+              src="./src/assets/image/produtos-de-limpeza.jpg"
+              alt="categorie-image"
+            />
+            <div class="categorie-title">
+              <span class="icon-beige"
+                ><img
+                  class="categorie-icon"
+                  src="/src/assets/image/sofa.svg"
+                  alt="categorie-icon"
+              /></span>
+              <h3>Produtos de Limpeza</h3>
             </div>
-        </section>
-        <section id="offers" class="offers">
-            <div class="section-informations">
-                <span class="section-tag">Novidades</span>
-                <h1>Principais Ofertas no Momento</h1>
+            <p>Deixe seu ambiente mais aconchegante, limpo e cheiroso.</p>
+          </div>
+        </div>
+      </section>
+      <section id="offers" class="offers">
+        <div class="section-informations">
+          <span class="section-tag">Novidades</span>
+          <h1>Principais Ofertas no Momento</h1>
+        </div>
+        <div class="products-container">
+          <div class="product">
+            <img
+              class="product-image"
+              src="./src/assets/image/sem-estoque.png"
+              alt="product-image"
+            />
+            <div class="product-informations">
+              <h3 class="product-title">Pote de Guardar Sorvete</h3>
+              <div class="product-price-container">
+                <span class="product-price">R$ 29,99</span>
+                <span class="buy-icon icon-yellow"
+                  ><img src="/src/assets/image/buy-icon.svg" alt="buy-icon"
+                /></span>
+              </div>
             </div>
-            <div class="products-container">
+          </div>
 
-                <div class="product">
-                    <img class="product-image" src="./src/assets/image/sem-estoque.png" alt="product-image">
-                    <div class="product-informations">
-                        <h3 class="product-title">Pote de Guardar Sorvete</h3>
-                        <div class="product-price-container">
-                            <span class="product-price">R$ 29,99</span>
-                            <span class="buy-icon icon-yellow"><img src="/src/assets/image/buy-icon.svg"
-                                    alt="buy-icon"></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product">
-                    <img class="product-image" src="./src/assets/image/sem-estoque.png" alt="product-image">
-                    <div class="product-informations">
-                        <h3 class="product-title">Carrinho de Brinquedo legal</h3>
-                        <div class="product-price-container">
-                            <span class="product-price">R$ 99,99</span>
-                            <span class="buy-icon icon-yellow"><img src="/src/assets/image/buy-icon.svg"
-                                    alt="buy-icon"></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product">
-                    <img class="product-image" src="./src/assets/image/sem-estoque.png" alt="product-image">
-                    <div class="product-informations">
-                        <h3 class="product-title">Panelas Antiaderentes</h3>
-                        <div class="product-price-container">
-                            <span class="product-price">R$ 89,90</span>
-                            <span class="buy-icon icon-yellow"><img src="/src/assets/image/buy-icon.svg"
-                                    alt="buy-icon"></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product">
-                    <img class="product-image" src="./src/assets/image/sem-estoque.png" alt="product-image">
-                    <div class="product-informations">
-                        <h3 class="product-title">Limpador de Roupa - Limpa Tudo</h3>
-                        <div class="product-price-container">
-                            <span class="product-price">R$ 29,99</span>
-                            <span class="buy-icon icon-yellow"><img src="/src/assets/image/buy-icon.svg"
-                                    alt="buy-icon"></span>
-                        </div>
-                    </div>
-                </div>
-
+          <div class="product">
+            <img
+              class="product-image"
+              src="./src/assets/image/sem-estoque.png"
+              alt="product-image"
+            />
+            <div class="product-informations">
+              <h3 class="product-title">Carrinho de Brinquedo legal</h3>
+              <div class="product-price-container">
+                <span class="product-price">R$ 99,99</span>
+                <span class="buy-icon icon-yellow"
+                  ><img src="/src/assets/image/buy-icon.svg" alt="buy-icon"
+                /></span>
+              </div>
             </div>
-        </section>
-        <section class="ourMission">
-            <article class="card-ourMission">
-                <img src="src/assets/image/marketplace.svg" alt="market-ico">
-                <div class="ourMission-text">
-                    <h1>Nossa Missão</h1>
-                    <p>A Real Melo nasceu do sonho de oferecer praticidade, variedade e economia
-                        para as famílias brasileiras. Nosso propósito é levar produtos de qualidade para
-                        o seu lar, tornando cada momento mais especial e facilitando o seu dia a dia
-                        com tudo o que você precisa em um único lugar.</p>
-                </div>
-            </article>
-        </section>
+          </div>
+
+          <div class="product">
+            <img
+              class="product-image"
+              src="./src/assets/image/sem-estoque.png"
+              alt="product-image"
+            />
+            <div class="product-informations">
+              <h3 class="product-title">Panelas Antiaderentes</h3>
+              <div class="product-price-container">
+                <span class="product-price">R$ 89,90</span>
+                <span class="buy-icon icon-yellow"
+                  ><img src="/src/assets/image/buy-icon.svg" alt="buy-icon"
+                /></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <img
+              class="product-image"
+              src="./src/assets/image/sem-estoque.png"
+              alt="product-image"
+            />
+            <div class="product-informations">
+              <h3 class="product-title">Limpador de Roupa - Limpa Tudo</h3>
+              <div class="product-price-container">
+                <span class="product-price">R$ 29,99</span>
+                <span class="buy-icon icon-yellow"
+                  ><img src="/src/assets/image/buy-icon.svg" alt="buy-icon"
+                /></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ourMission">
+        <article class="card-ourMission">
+          <img src="src/assets/image/marketplace.svg" alt="market-ico" />
+          <div class="ourMission-text">
+            <h1>Nossa Missão</h1>
+            <p>
+              A Real Melo nasceu do sonho de oferecer praticidade, variedade e
+              economia para as famílias brasileiras. Nosso propósito é levar
+              produtos de qualidade para o seu lar, tornando cada momento mais
+              especial e facilitando o seu dia a dia com tudo o que você precisa
+              em um único lugar.
+            </p>
+          </div>
+        </article>
+      </section>
     </main>
-    <footer>
-        
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-left">
+          <div class="footer-map-card">
+            <div class="footer-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.3078098835776!2d-46.70810342401264!3d-23.62914517875319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce51340ecc3abb%3A0x3b63433c1353fb2e!2sRealMelo%20-%20Loja%20de%20Variedades!5e0!3m2!1spt-BR!2sbr!4v1780264362572!5m2!1spt-BR!2sbr"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div class="footer-location"><i><img src="src/assets/image/mapa.svg" alt=""></i>São Paulo, SP - Brasil</div>
+        </div>
+        <div class="footer-right">
+          <h2>Real Melo</h2>
+          <p class="footer-section-title">Atendimento</p>
+          <a class="footer-email" href="mailto:ola@realmelo.com"
+            ><i><img src="src/assets/image/email.svg" alt=""></i>ola@realmelo.com</a
+          >
+          <div class="footer-socials">
+            <span class="footer-social"><i><img src="src/assets/image/whatsapp-icon.svg" alt=""></i></span>
+            <span class="footer-social"><i><img src="src/assets/image/instagram-icon.svg" alt=""></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copy">
+        © 2026 Real Melo. Variedade e qualidade para o seu lar.
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

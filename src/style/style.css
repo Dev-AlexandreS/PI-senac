@@ -7,6 +7,9 @@
     --color-font: #4e4632;
     
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
 html{
     scroll-behavior: smooth;
 }
@@ -276,7 +279,10 @@ header > nav > a:hover {
 }
 
 .ourMission {
-    background-color: #f3e5c8;
+    background-image: url("../assets/image/lojarealmelo.png");
+    background-position: 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 64px 0px;
     display: flex;
     flex-direction: column;
@@ -441,3 +447,19 @@ footer {
     }
 }
 
+.logo-footer{
+    width: fit-content;
+    display: flex;
+    margin-top: 2rem;
+    justify-content: flex-start;
+}
+.logo-footer > h1{
+    font-size: 5rem; 
+    margin-left: -8rem;
+    background: linear-gradient(75deg, #f7c028, #326dc4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+}

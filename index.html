@@ -20,13 +20,18 @@
         <img src="src/assets/image/logo.svg" alt="logo-img" />
         <h1>Real Melo</h1>
       </div>
-      <nav>
+      <nav id="main-nav">
         <a href="#hero-header">Inicio</a>
-        <a href="#departments">Departamentos</a>
         <a href="#offers">Ofertas</a>
+        <a href="#departments">Departamentos</a>
         <a href="#footer">Contato</a>
       </nav>
       <button class="header-button">Contato</button>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </header>
     <main>
       <section id="hero-header" class="hero-header">
@@ -50,213 +55,309 @@
         </div>
       </section>
     
-      <section id="offers" class="offers">
-        <div class="section-informations">
-          <span class="section-tag">Novidades</span>
-          <h1>Principais Ofertas no Momento</h1>
-        </div>
-        <div class="products-container">
-          <div class="product">
-            <img
-              class="product-image"
-              src="./src/assets/image/tupperware.jpg"
-              alt="product-image-tupperware"
-            />
-            <div class="product-informations">
-              <h3 class="product-title">Jogo de Tupperware</h3>
-              <div class="product-price-container">
-                <span class="product-price">R$ 29,99</span>
-                <a
-                  class="buy-icon icon-yellow"
-                  href="https://wa.me/5511913020257?text=Tenho%20interesse%20no%20produto%20Jogo%20de%20Tupperware%2C%20est%C3%A1%20dispon%C3%ADvel%3F"
-                  target="_blank"
-                >
-                  <img src="/src/assets/image/buy-icon.svg" alt="buy-icon" />
-                </a>
-              </div>
-            </div>
-          </div>
-          
-          <div class="product">
-            <img
-              class="product-image"
-              src="./src/assets/image/carrinhos.jpg"
-              alt="product-image-carrinhos"
-            />
-            <div class="product-informations">
-              <h3 class="product-title">Kit carrinhos militares</h3>
-              <div class="product-price-container">
-                <span class="product-price">R$ 99,99</span>
-                <a
-                  class="buy-icon icon-yellow"
-                  href="https://wa.me/5511913020257?text=Tenho%20interesse%20no%20produto%20Kit%20carrinhos%20militares%2C%20est%C3%A1%20dispon%C3%ADvel%3F"
-                  target="_blank"
-                >
-                  <img src="/src/assets/image/buy-icon.svg" alt="buy-icon" />
-                </a>
-              </div>
-            </div>
-          </div>
-          
-          <div class="product">
-            <img
-              class="product-image"
-              src="./src/assets/image/panelas.jpg"
-              alt="product-image-panelas-antiaderentes"
-            />
-            <div class="product-informations">
-              <h3 class="product-title">Panelas Antiaderentes</h3>
-              <div class="product-price-container">
-                <span class="product-price">R$ 89,90</span>
-                <a
-                  class="buy-icon icon-yellow"
-                  href="https://wa.me/5511913020257?text=Tenho%20interesse%20no%20produto%20Panelas%20Antiaderentes%2C%20est%C3%A3o%20dispon%C3%ADveis%3F"
-                  target="_blank"
-                >
-                  <img src="/src/assets/image/buy-icon.svg" alt="buy-icon" />
-                </a>
-              </div>
-            </div>
-          </div>
-          
-          <div class="product">
-            <img
-              class="product-image"
-              src="./src/assets/image/limpeza de roupas.jpg"
-              alt="product-image"
-            />
-            <div class="product-informations">
-              <h3 class="product-title">Kit Limpeza de Roupas</h3>
-              <div class="product-price-container">
-                <span class="product-price">R$ 29,99</span>
-                <a
-                  class="buy-icon icon-yellow"
-                  href="https://wa.me/5511913020257?text=Tenho%20interesse%20no%20produto%20Kit%20Limpeza%20de%20Roupas%2C%20est%C3%A1%20dispon%C3%ADvel%3F"
-                  target="_blank"
-                >
-                  <img src="/src/assets/image/buy-icon.svg" alt="buy-icon" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <section id="departments" class="categories">
         <div class="section-informations">
           <span class="section-tag">Departamentos</span>
           <h1>Compre por Categoria</h1>
         </div>
         <div class="categorie-itens">
-          <div class="categorie-item">
-            <img
-              class="categorie-image"
-              src="./src/assets/image/utilidades-domesticas.jpg"
-              alt="categorie-image"
-            />
-            <div class="categorie-title">
-              <span class="icon-yellow"
-                ><img
-                  class="categorie-icon"
-                  src="/src/assets/image/geladeira.svg"
-                  alt="categorie-icon"
-              /></span>
-              <h3>Utilidades Domésticas</h3>
+
+          <div class="categorie-item" data-filter="cozinha">
+            <div class="categorie-bg" style="background-image: url('./src/assets/image/utilidades-domesticas.jpg')"></div>
+            <div class="categorie-overlay"></div>
+            <div class="categorie-content">
+              <span class="categorie-icon-wrap icon-yellow"><img class="categorie-icon" src="/src/assets/image/geladeira.svg" alt="" /></span>
+              <h3 class="categorie-name">Cozinha</h3>
+              <p class="categorie-desc">Panelas, potes e utensílios</p>
+              <span class="categorie-cta">Ver produtos →</span>
             </div>
-            <p>
-              Facilite seu dia a dia com itens práticos e essenciais para a sua
-              casa.
-            </p>
           </div>
-          <div class="categorie-item">
-            <img
-              class="categorie-image"
-              src="./src/assets/image/brinquedos.jpg"
-              alt="categorie-image"
-            />
-            <div class="categorie-title">
-              <span class="icon-blue"
-                ><img
-                  class="categorie-icon"
-                  src="/src/assets/image/carro.svg"
-                  alt="categorie-icon"
-              /></span>
-              <h3>Brinquedos</h3>
+
+          <div class="categorie-item" data-filter="brinquedos">
+            <div class="categorie-bg" style="background-image: url('./src/assets/image/brinquedos.jpg')"></div>
+            <div class="categorie-overlay"></div>
+            <div class="categorie-content">
+              <span class="categorie-icon-wrap icon-blue"><img class="categorie-icon" src="/src/assets/image/carro.svg" alt="" /></span>
+              <h3 class="categorie-name">Brinquedos</h3>
+              <p class="categorie-desc">Diversão para todas as idades</p>
+              <span class="categorie-cta">Ver produtos →</span>
             </div>
-            <p>
-              Diversão garantida para todas as idades com nossos jogos e
-              brinquedos.
-            </p>
           </div>
-          <div class="categorie-item">
-            <img
-              class="categorie-image"
-              src="./src/assets/image/produtos-de-limpeza.jpg"
-              alt="categorie-image"
-            />
-            <div class="categorie-title">
-              <span class="icon-beige"
-                ><img
-                  class="categorie-icon"
-                  src="/src/assets/image/sofa.svg"
-                  alt="categorie-icon"
-              /></span>
-              <h3>Produtos de Limpeza</h3>
+
+          <div class="categorie-item" data-filter="limpeza">
+            <div class="categorie-bg" style="background-image: url('./src/assets/image/produtos-de-limpeza.jpg')"></div>
+            <div class="categorie-overlay"></div>
+            <div class="categorie-content">
+              <span class="categorie-icon-wrap icon-beige"><img class="categorie-icon" src="/src/assets/image/sofa.svg" alt="" /></span>
+              <h3 class="categorie-name">Limpeza</h3>
+              <p class="categorie-desc">Lar limpo e cheiroso</p>
+              <span class="categorie-cta">Ver produtos →</span>
             </div>
-            <p>Deixe seu ambiente mais aconchegante, limpo e cheiroso.</p>
           </div>
+
+          <div class="categorie-item" data-filter="utilidades">
+            <div class="categorie-bg" style="background-image: url('./src/assets/image/loja2.png')"></div>
+            <div class="categorie-overlay"></div>
+            <div class="categorie-content">
+              <span class="categorie-icon-wrap icon-yellow"><img class="categorie-icon" src="/src/assets/image/geladeira.svg" alt="" /></span>
+              <h3 class="categorie-name">Utilidades</h3>
+              <p class="categorie-desc">Itens práticos do dia a dia</p>
+              <span class="categorie-cta">Ver produtos →</span>
+            </div>
+          </div>
+
+          <div class="categorie-item" data-filter="organização">
+            <div class="categorie-bg" style="background-image: url('./src/assets/image/realmelo-loja.png')"></div>
+            <div class="categorie-overlay"></div>
+            <div class="categorie-content">
+              <span class="categorie-icon-wrap icon-blue"><img class="categorie-icon" src="/src/assets/image/marketplace.svg" alt="" /></span>
+              <h3 class="categorie-name">Organização</h3>
+              <p class="categorie-desc">Praticidade e estilo</p>
+              <span class="categorie-cta">Ver produtos →</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="offers" class="offers">
+        <div class="section-informations">
+          <span class="section-tag">Novidades</span>
+          <h1>Principais Ofertas no Momento</h1>
+        </div>
+
+        <div class="filter-bar">
+          <button class="filter-btn active" data-category="todos">Todos</button>
+          <button class="filter-btn" data-category="cozinha">Cozinha</button>
+          <button class="filter-btn" data-category="brinquedos">Brinquedos</button>
+          <button class="filter-btn" data-category="limpeza">Limpeza</button>
+          <button class="filter-btn" data-category="utilidades">Utilidades</button>
+          <button class="filter-btn" data-category="organização">Organização</button>
+        </div>
+
+        <div class="carousel-wrapper">
+          <button class="carousel-btn carousel-btn--prev" id="carousel-prev" aria-label="Anterior">&#8592;</button>
+          <div class="products-container" id="products-carousel">
+
+            <div class="product" data-category="cozinha">
+              <div class="product-image-wrapper">
+                <img class="product-image" src="./src/assets/image/tupperware.jpg" alt="Jogo de Tupperware" />
+                <span class="product-badge">Oferta</span>
+              </div>
+              <div class="product-informations">
+                <span class="product-category">Cozinha</span>
+                <h3 class="product-title">Jogo de Tupperware</h3>
+                <div class="product-price-container">
+                  <span class="product-price">R$ 29,99</span>
+                  <a class="product-buy-btn" href="https://wa.me/5511913020257?text=Tenho%20interesse%20no%20produto%20Jogo%20de%20Tupperware%2C%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank">
+                    <img src="/src/assets/image/buy-icon.svg" alt="" /> Comprar
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="product" data-category="cozinha">
+              <div class="product-image-wrapper">
+                <img class="product-image" src="./src/assets/image/panelas.jpg" alt="Panelas Antiaderentes" />
+                <span class="product-badge">Oferta</span>
+              </div>
+              <div class="product-informations">
+                <span class="product-category">Cozinha</span>
+                <h3 class="product-title">Panelas Antiaderentes</h3>
+                <div class="product-price-container">
+                  <span class="product-price">R$ 89,90</span>
+                  <a class="product-buy-btn" href="https://wa.me/5511913020257?text=Tenho%20interesse%20no%20produto%20Panelas%20Antiaderentes%2C%20est%C3%A3o%20dispon%C3%ADveis%3F" target="_blank">
+                    <img src="/src/assets/image/buy-icon.svg" alt="" /> Comprar
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="product" data-category="brinquedos">
+              <div class="product-image-wrapper">
+                <img class="product-image" src="./src/assets/image/carrinhos.jpg" alt="Kit carrinhos militares" />
+                <span class="product-badge">Oferta</span>
+              </div>
+              <div class="product-informations">
+                <span class="product-category">Brinquedos</span>
+                <h3 class="product-title">Kit carrinhos militares</h3>
+                <div class="product-price-container">
+                  <span class="product-price">R$ 99,99</span>
+                  <a class="product-buy-btn" href="https://wa.me/5511913020257?text=Tenho%20interesse%20no%20produto%20Kit%20carrinhos%20militares%2C%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank">
+                    <img src="/src/assets/image/buy-icon.svg" alt="" /> Comprar
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="product" data-category="brinquedos">
+              <div class="product-image-wrapper">
+                <img class="product-image" src="./src/assets/image/brinquedos.jpg" alt="Brinquedos Sortidos" />
+                <span class="product-badge">Novo</span>
+              </div>
+              <div class="product-informations">
+                <span class="product-category">Brinquedos</span>
+                <h3 class="product-title">Brinquedos Sortidos</h3>
+                <div class="product-price-container">
+                  <span class="product-price">R$ 49,90</span>
+                  <a class="product-buy-btn" href="https://wa.me/5511913020257?text=Tenho%20interesse%20nos%20Brinquedos%20Sortidos%2C%20est%C3%A3o%20dispon%C3%ADveis%3F" target="_blank">
+                    <img src="/src/assets/image/buy-icon.svg" alt="" /> Comprar
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="product" data-category="limpeza">
+              <div class="product-image-wrapper">
+                <img class="product-image" src="./src/assets/image/limpeza de roupas.jpg" alt="Kit Limpeza de Roupas" />
+                <span class="product-badge">Oferta</span>
+              </div>
+              <div class="product-informations">
+                <span class="product-category">Limpeza</span>
+                <h3 class="product-title">Kit Limpeza de Roupas</h3>
+                <div class="product-price-container">
+                  <span class="product-price">R$ 29,99</span>
+                  <a class="product-buy-btn" href="https://wa.me/5511913020257?text=Tenho%20interesse%20no%20produto%20Kit%20Limpeza%20de%20Roupas%2C%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank">
+                    <img src="/src/assets/image/buy-icon.svg" alt="" /> Comprar
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="product" data-category="limpeza">
+              <div class="product-image-wrapper">
+                <img class="product-image" src="./src/assets/image/produtos-de-limpeza.jpg" alt="Kit Produtos de Limpeza" />
+                <span class="product-badge">Oferta</span>
+              </div>
+              <div class="product-informations">
+                <span class="product-category">Limpeza</span>
+                <h3 class="product-title">Kit Produtos de Limpeza</h3>
+                <div class="product-price-container">
+                  <span class="product-price">R$ 44,90</span>
+                  <a class="product-buy-btn" href="https://wa.me/5511913020257?text=Tenho%20interesse%20no%20Kit%20Produtos%20de%20Limpeza%2C%20est%C3%A3o%20dispon%C3%ADveis%3F" target="_blank">
+                    <img src="/src/assets/image/buy-icon.svg" alt="" /> Comprar
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="product" data-category="utilidades">
+              <div class="product-image-wrapper">
+                <img class="product-image" src="./src/assets/image/utilidades-domesticas.jpg" alt="Kit Utilidades Domésticas" />
+                <span class="product-badge">Novo</span>
+              </div>
+              <div class="product-informations">
+                <span class="product-category">Utilidades</span>
+                <h3 class="product-title">Kit Utilidades Domésticas</h3>
+                <div class="product-price-container">
+                  <span class="product-price">R$ 59,90</span>
+                  <a class="product-buy-btn" href="https://wa.me/5511913020257?text=Tenho%20interesse%20no%20Kit%20Utilidades%20Dom%C3%A9sticas%2C%20est%C3%A3o%20dispon%C3%ADveis%3F" target="_blank">
+                    <img src="/src/assets/image/buy-icon.svg" alt="" /> Comprar
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="product" data-category="organização">
+              <div class="product-image-wrapper">
+                <img class="product-image" src="./src/assets/image/loja2.png" alt="Conjunto de Organização" />
+                <span class="product-badge">Novo</span>
+              </div>
+              <div class="product-informations">
+                <span class="product-category">Organização</span>
+                <h3 class="product-title">Conjunto de Organização</h3>
+                <div class="product-price-container">
+                  <span class="product-price">R$ 39,90</span>
+                  <a class="product-buy-btn" href="https://wa.me/5511913020257?text=Tenho%20interesse%20no%20Conjunto%20de%20Organiza%C3%A7%C3%A3o%2C%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank">
+                    <img src="/src/assets/image/buy-icon.svg" alt="" /> Comprar
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-btn carousel-btn--next" id="carousel-next" aria-label="Próximo">&#8594;</button>
         </div>
       </section>
       <section class="ourMission">
-        <article class="card-ourMission">
-          <img src="src/assets/image/marketplace.svg" alt="market-ico" />
-          <div class="ourMission-text">
-            <h1>Nossa Missão</h1>
-            <p>
-              A Real Melo nasceu do sonho de oferecer praticidade, variedade e
-              economia para as famílias brasileiras. Nosso propósito é levar
-              produtos de qualidade para o seu lar, tornando cada momento mais
-              especial e facilitando o seu dia a dia com tudo o que você precisa
-              em um único lugar.
-            </p>
+        <div class="ourMission-image"></div>
+        <div class="ourMission-content">
+          <span class="ourMission-label">Quem Somos</span>
+          <h2 class="ourMission-title">Nossa Missão</h2>
+          <div class="ourMission-divider"></div>
+          <p class="ourMission-description">
+            A Real Melo nasceu do sonho de oferecer praticidade, variedade e
+            economia para as famílias brasileiras. Nosso propósito é levar
+            produtos de qualidade para o seu lar, tornando cada momento mais
+            especial e facilitando o seu dia a dia com tudo o que você precisa
+            em um único lugar.
+          </p>
+          <div class="ourMission-stats">
+            <div class="ourMission-stat">
+              <span class="stat-number">+500</span>
+              <span class="stat-label">Produtos</span>
+            </div>
+            <div class="ourMission-stat">
+              <span class="stat-number">+1k</span>
+              <span class="stat-label">Clientes</span>
+            </div>
+            <div class="ourMission-stat">
+              <span class="stat-number">5★</span>
+              <span class="stat-label">Avaliação</span>
+            </div>
           </div>
-        </article>
+        </div>
       </section>
     </main>
     <footer id="footer">
-      <div class="footer-wrapper">
-        <div class="footer-left">
-          <div class="footer-map-card">
-            <div class="footer-map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.3078098835776!2d-46.70810342401264!3d-23.62914517875319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce51340ecc3abb%3A0x3b63433c1353fb2e!2sRealMelo%20-%20Loja%20de%20Variedades!5e0!3m2!1spt-BR!2sbr!4v1780264362572!5m2!1spt-BR!2sbr"
-                width="600"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h2 class="footer-brand-name">Real Melo</h2>
+          <p class="footer-brand-tagline">Variedade e qualidade para o seu lar.</p>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Navegação</h3>
+          <nav class="footer-nav">
+            <a href="#hero-header">Início</a>
+            <a href="#departments">Departamentos</a>
+            <a href="#offers">Ofertas</a>
+            <a href="#footer">Contato</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Atendimento</h3>
+          <a class="footer-email" href="mailto:ola@realmelo.com">
+            <img src="src/assets/image/email.svg" alt="" />ola@realmelo.com
+          </a>
+          <div class="footer-location">
+            <img src="src/assets/image/mapa.svg" alt="" />São Paulo, SP - Brasil
           </div>
-          <div class="footer-location"><i><img src="src/assets/image/mapa.svg" alt=""></i>São Paulo, SP - Brasil</div>
-        </div>
-        <div class="logo-footer">
-          <h1>Real Melo</h1>
-        </div>
-        <div class="footer-right">
-          <!-- <h2>Real Melo</h2> -->
-          <p class="footer-section-title tag">Atendimento</p>
-          <a class="footer-email" href="mailto:ola@realmelo.com"
-            ><i><img src="src/assets/image/email.svg" alt=""></i>ola@realmelo.com</a
-          >
           <div class="footer-socials">
-            <span class="footer-social"><i><img src="src/assets/image/whatsapp-icon.svg" alt=""></i></span>
-            <span class="footer-social"><i><img src="src/assets/image/instagram-icon.svg" alt=""></i></span>
+            <a class="footer-social" href="#" aria-label="WhatsApp">
+              <img src="src/assets/image/whatsapp-icon.svg" alt="WhatsApp" />
+            </a>
+            <a class="footer-social" href="#" aria-label="Instagram">
+              <img src="src/assets/image/instagram-icon.svg" alt="Instagram" />
+            </a>
+          </div>
+        </div>
+        <div class="footer-col footer-col--map">
+          <h3 class="footer-col-title">Onde Estamos</h3>
+          <div class="footer-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.3078098835776!2d-46.70810342401264!3d-23.62914517875319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce51340ecc3abb%3A0x3b63433c1353fb2e!2sRealMelo%20-%20Loja%20de%20Variedades!5e0!3m2!1spt-BR!2sbr!4v1780264362572!5m2!1spt-BR!2sbr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>
-      <div class="footer-copy">
-        © 2026 Real Melo. Variedade e qualidade para o seu lar.
+      <div class="footer-bottom">
+        <span>© 2026 Real Melo. Todos os direitos reservados.</span>
+        <span class="footer-bottom-tag">Feito com ❤️ para as famílias brasileiras</span>
       </div>
     </footer>
   </body>

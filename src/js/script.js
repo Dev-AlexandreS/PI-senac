@@ -1,13 +1,18 @@
 const cta = document.getElementById("cta");
 const telefone = "5511913020257";
+const contactButton = document.getElementById("contact-button");
 
 cta.addEventListener("click", function () {
-    console.log("Botão clicado!");
     document.getElementById("offers").scrollIntoView({
         behavior: "smooth"
     });
 });
 
+contactButton.addEventListener("click", function () {
+    document.getElementById("footer").scrollIntoView({
+        behavior: "smooth"
+    });
+});
 
 var carousel = document.getElementById("products-carousel");
 var prevBtn = document.getElementById("carousel-prev");
